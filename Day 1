@@ -2,12 +2,17 @@ class classcreation {
     int rollNumber;
     String name;
 
+classcreation(int i, String n){
+    rollNumber = i;
+    name = n;
+}
+
     
 }
 
 public class Main {
     public static void main(String[] args) {
-        classcreation obj = new classcreation();
+        classcreation obj = new classcreation(1,"Nikhil");
         obj.rollNumber = 1;
         obj.name = "Nikhil";
 
