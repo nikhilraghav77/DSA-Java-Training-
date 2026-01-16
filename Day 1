@@ -1,8 +1,28 @@
-class classcreation {
+Code -1
+class Student{
+    //logic
+    int rollNumber;
+    String name;
+}
+
+public class basic{
+
+    public static void main(String[] args) {
+        Student obj = new Student();
+        obj.rollNumber = 1;
+        obj.name = "Parshant";
+        System.out.println(obj.rollNumber);
+        System.out.println(obj.name);
+    }
+}
+
+
+Code -2
+class student {
     int rollNumber;
     String name;
 
-classcreation(int i, String n){
+student(int i, String n){
     rollNumber = i;
     name = n;
 }
@@ -12,7 +32,7 @@ classcreation(int i, String n){
 
 public class Main {
     public static void main(String[] args) {
-        classcreation obj = new classcreation(1,"Nikhil");
+        student obj = new student(1,"Nikhil");
         obj.rollNumber = 1;
         obj.name = "Nikhil";
 
