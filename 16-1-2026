@@ -40,3 +40,19 @@ public class Main {
         System.out.println(obj.name);
     }
 }
+
+code-3
+class Student {
+    int rollNumber;
+    void setId(int rollNumber){
+        this.rollNumber = rollNumber;
+    }
+}
+public class basic {
+    public static void main(String[] args) {
+        Student obj = new Student();
+        obj.setId(1751);
+        System.out.println(obj.rollNumber);
+
+    }
+}
