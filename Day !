@@ -1,0 +1,17 @@
+class classcreation {
+    int rollNumber;
+    String name;
+
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        classcreation obj = new classcreation();
+        obj.rollNumber = 1;
+        obj.name = "Nikhil";
+
+        System.out.println(obj.rollNumber);
+        System.out.println(obj.name);
+    }
+}
