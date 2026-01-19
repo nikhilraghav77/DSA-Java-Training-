@@ -1,0 +1,17 @@
+#Code 1 - creating method 
+public class Student {
+
+    void study() {
+        System.out.println("Student is studying");
+    }
+
+    void sleep() {
+        System.out.println("Student is sleeping");
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.study();
+        s1.sleep();
+    }
+}
