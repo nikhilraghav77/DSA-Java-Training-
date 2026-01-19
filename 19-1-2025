@@ -29,6 +29,21 @@ public static void main(String[] args){
 }
 }
 
+#code 5
+class Students {
+    int marks = 80;
+
+    static void updateMarks(Students s) {
+        s.marks += 2;
+    }
+
+    public static void main(String[] args) {
+        Students s1 = new Students();
+        updateMarks(s1);
+        System.out.println(s1.marks);
+    }
+}
+
 #code 3
 // Dereference 
 public class Student{
