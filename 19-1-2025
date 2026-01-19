@@ -46,7 +46,7 @@ public static void main(String[] args){
 }
 }
 
-#code 3
+#code 4 
 //multiple reference  reference 
 public class Student{
 int marks = 80;
