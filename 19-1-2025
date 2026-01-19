@@ -76,3 +76,25 @@ public static void main(String[] args){
 
 }
 }
+#code6
+import java.util.*;
+
+class Students {
+    int id;
+
+    Students(int id) {
+        this.id = id;
+    }
+
+    public static void main(String[] args) {
+
+        List<Students> students = new ArrayList<>();
+        students.add(new Students(101));
+        students.add(new Students(102));
+
+        for (Students s : students) {
+            System.out.println(s.id);
+        }
+    }
+}
+
