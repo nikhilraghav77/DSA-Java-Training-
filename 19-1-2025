@@ -30,6 +30,23 @@ public static void main(String[] args){
 }
 
 #code 3
+// Dereference 
+public class Student{
+int marks = 80;
+
+
+public static void main(String[] args){
+    Student s1 = new Student();
+    Student s2 = s1; // same reference
+    s2 = null; // derefrencing 
+    System.out.println(s2.marks);
+    
+    
+
+}
+}
+
+#code 3
 //multiple reference  reference 
 public class Student{
 int marks = 80;
