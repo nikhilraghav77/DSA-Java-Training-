@@ -98,3 +98,37 @@ class Students {
     }
 }
 
+#code 7 
+
+Code 7
+Dictionaries of Objects 
+// Dictionaries of Objects 
+import java.util.*;
+class Student {
+    int id;
+    
+    Student(int id) {
+        this.id = id;
+    }
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    // syntax of ArrayList
+	    // List <datatype> list_name = new ArrayList<>();
+		Map<Integer, Student> map = new HashMap<>();
+		
+	    map.put(1, new Student(101));	
+		map.put(2, new Student(102));
+		
+		System.out.println(map.get(1).id);
+		System.out.println(map.get(3).id);
+		
+	}
+}
+Output :
+101
+Exception in thread "main" java.lang.NullPointerException: Cannot read field "id" because the return value of "java.util.Map.get(Object)" is null
+        at Main.main(Main.java:23)
