@@ -1,0 +1,33 @@
+//Encapsulation wrapping the data(method , class, variable)
+//into a single unit called class and restriction of the data using the access modifires 
+
+//public , private , protected 
+// need for encapsulation 
+
+//-- security
+//-- maintianability
+//--validation before changing the data
+//-- controll access
+#code1
+class BankAccount{
+    int bankBalance;
+    // setters
+    public void setBalance(int amount){
+        if(amount>=0){
+             bankBalance=amount;
+        }else{
+            System.out.println("invalid amount");
+
+        }
+        
+        }
+        // getters
+         public int getBalance(){
+            return bankBalance;
+    }
+    public static void main(String[] args) {
+        BankAccount acc = new BankAccount();
+        acc.setBalance(5000);
+        System.out.println(acc.getBalance());
+    }
+}
