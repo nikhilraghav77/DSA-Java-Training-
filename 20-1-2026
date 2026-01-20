@@ -31,3 +31,35 @@ public class BankAccount{
         System.out.println(acc.getBalance());
     }
 }
+
+// Abstraction 
+// Abstraction means hididng the implimentation and showing only essential part
+//Abstract class -- class can't be initialized and it is formed
+// using abstract keyword
+// abstract method -- no body only the implimentation is there
+
+#code 2
+public abstract class Vehical {
+    abstract void start();
+    public static void main(String[] args) {
+    Vehical v1 = new Car();
+    Vehical v2 = new Bike();
+    v1.start();
+    v2.start();
+        
+    }
+ 
+}
+class Car extends Vehical{
+    void start(){
+        System.err.println("Car Start");
+    }
+}
+class Bike extends Vehical{
+    void start(){
+        System.err.println("Bike Start");
+    }
+ 
+
+}
+   
