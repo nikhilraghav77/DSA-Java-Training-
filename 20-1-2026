@@ -9,7 +9,7 @@
 //--validation before changing the data
 //-- controll access
 #code1
-class BankAccount{
+public class BankAccount{
     int bankBalance;
     // setters
     public void setBalance(int amount){
