@@ -28,13 +28,7 @@ class Square{
        
    }
 }
-// differnce between static and instance variables and methods 
---> Static is accessed by class name
---> instance is accessed by object name
---> in static no need to use this keyword
---> in instance we need to use this keyword 
---> in static we make single copy
---> in instance we make multiple copies
+
 class Main {
     public static void main(String[] args) {
         // it is called using the class name 
@@ -42,3 +36,10 @@ class Main {
         
     }
 }
+// differnce between static and instance variables and methods 
+--> Static is accessed by class name
+--> instance is accessed by object name
+--> in static no need to use this keyword
+--> in instance we need to use this keyword 
+--> in static we make single copy
+--> in instance we make multiple copies
