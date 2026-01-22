@@ -1,0 +1,22 @@
+#Code 1
+class Student{
+    static String collegeName="IILM";
+    String name;
+    
+    Student(String name ){
+        this.name= name;
+        
+    }
+    void display(){
+        System.out.println(name +" Studied at "+ collegeName);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student s1= new Student("Nikhil");
+        // we can chnage the instance variable but can't change the static variable 
+        Student s2= new Student("Parshant");
+        s1.display();
+        s2.display();
+    }
+}
