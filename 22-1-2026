@@ -20,3 +20,18 @@ class Main {
         s2.display();
     }
 }
+#code 2
+//static method
+class Square{
+   static int square(int num){
+       return num *num;
+       
+   }
+}
+class Main {
+    public static void main(String[] args) {
+        // it is called using the class name 
+        System.out.println(Square.square(5));
+        
+    }
+}
