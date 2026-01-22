@@ -82,3 +82,27 @@ class Main {
        // System.out.println("Try programiz.pro");
     }
 }
+
+#code 3
+//Dependency 
+//one class is dependent on another class temporarily 
+// No permanent storage is there 
+
+class Payment{
+    void pay(){
+        System.out.println("Payment Successful");
+    }
+}
+class Gpay{
+    void processPayment(Payment p){ // service provider
+        p.pay();
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Gpay pay = new Gpay();
+        Payment payment = new Payment();
+        pay.processPayment(payment);
+      //  System.out.println("Try programiz.pro");
+    }
+}
