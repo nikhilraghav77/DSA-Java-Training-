@@ -29,6 +29,7 @@ class Square{
    }
 }
 
+
 class Main {
     public static void main(String[] args) {
         // it is called using the class name 
@@ -43,3 +44,41 @@ class Main {
 --> in instance we need to use this keyword 
 --> in static we make single copy
 --> in instance we make multiple copies
+
+#code3
+// Aggrigation And Dependency 
+// Address
+class Address{ // class
+    private String city; // instance
+    Address(String city) { // constructor 
+        this.city= city;
+    }
+    public String getCity(){
+        return city;
+    }
+}
+// Student class(Aggrigate Addres)
+class Student{
+   private String name;
+   private Address address; // Aggrigation  access modifier , class name , variable name 
+   
+   Student(String name, Address address){
+       this.name = name;
+       this.address= address;
+       
+   }
+   void display(){
+       System.out.println(name+" lives in " +address.getCity());
+   }
+    
+}
+
+class Main {
+    public static void main(String[] args) {
+        Address add = new Address("Delhi");
+        Student s1 = new Student("Nikhil",add);
+        s1.display();
+        
+       // System.out.println("Try programiz.pro");
+    }
+}
