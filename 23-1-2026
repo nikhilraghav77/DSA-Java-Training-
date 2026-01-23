@@ -50,3 +50,33 @@ class Main {
        
     }
 }
+
+#code3 
+// Inheritance
+// Hierarchical Inheritance 
+class Vehicle{
+    void start(){
+        System.out.println("Vehicle Start");
+    }
+    
+}
+class Bike extends Vehicle { // child class
+void ride(){
+    System.out.println("Bike Running");
+}
+}
+class Car extends Vehicle{ // child 
+    void drive(){
+        System.out.println("Car Running");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        Bike b = new Bike();
+        c.start();
+        b.ride();
+        c.drive();
+       
+    }
+}
