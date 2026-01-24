@@ -27,3 +27,27 @@ class Main {
        // System.out.println("Try programiz.pro");
     }
 }
+
+#code 2
+// inheritjng constructor 
+class Person{
+    Person(String name ){
+        System.out.println("Person name " + name);
+    }
+}
+class collegeStudent extends Person {
+    collegeStudent(String name){
+        super(name); // parent class constructor called 
+          System.out.println("college Student constructor called"); // child classs constructor called 
+        
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        collegeStudent c = new collegeStudent("Nikhil");
+        
+        
+      
+    }
+}
