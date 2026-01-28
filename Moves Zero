@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int j = 0; // position for next non-zero
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                j++;
+            }
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+
+        // Test case
+        int[] nums = {0, 1, 0, 3, 12};
+
+        sol.moveZeroes(nums);
+
+        // Print result
+        System.out.println(Arrays.toString(nums));
+    }
+}
