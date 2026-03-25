@@ -13,4 +13,4 @@ class Solution {
     }
 }
 
-Above code gives valid answer but not submitable on Leetcode due to ArrayIndexOutofBound 
+Above code is simple logic for 2x2 matrix but we to perform for mxn 
