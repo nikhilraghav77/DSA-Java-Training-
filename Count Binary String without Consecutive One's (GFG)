@@ -1,0 +1,17 @@
+Q - Count Binary String without Consecutive One's (GFG)
+
+public class Main
+{
+    public static int countString(int n) {
+        // base ondition
+        if(n == 0) return 1;
+        if(n == 1) return 2;
+        if(n == 2) return 3;
+        //logic
+        return countString(n-1) + countString(n-2);
+    }
+	public static void main(String[] args) {
+	    int n = 3;
+		System.out.println(countString(n));
+	}
+}
